@@ -1,9 +1,13 @@
 # 🏙️Cheat-IOE.VN
 Code heck ioe :'))
 ## ☃️ Hướng dẫn
+
 **Bước 1:** Nhấn Ctrl+Shift+I trước khi làm bài
+
 **Bước 2:** Vào mục console rồi paste đoạn code đúng theo từng bài
-**Bước 3:** Nhấn enter rồi đợi 1 lúc đáp án sẽ hiện ra =))
+
+**Bước 3:** Nhấn enter rồi đợi 1 lúc đáp án sẽ hiện ra 
+
 ## 🌈 Các dạng bài 
 **Bài con chó**
 ```js
@@ -17,7 +21,7 @@ fetch("https://raw.githubusercontent.com/catcat1204/Cheat-IOE.VN/master/src/bai_
 ```js
 fetch("https://raw.githubusercontent.com/catcat1204/Cheat-IOE.VN/master/src/bai_true_false.js").then(res => res.text()).then(code => eval(code))
 ```
-**Bài trắc nghiêm**
+**Bài trắc nghiệm**
 ```js
 fetch("https://raw.githubusercontent.com/catcat1204/Cheat-IOE.VN/master/src/bai_trac_nghiem.js").then(res => res.text()).then(code => eval(code))
 ```
