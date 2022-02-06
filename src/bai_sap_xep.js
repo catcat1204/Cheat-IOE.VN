@@ -52,5 +52,5 @@ function getAnswer(index, questId, ans, token, gameId, examKey) {
     return a.orderTrue - b.orderTrue;
   });
   result_ans = result_ans.map((e) => `${e.content}`)
-  console.log(`${index}. ${result_ans.join(" ")}`)
+  console.log(`${index}. ${result_ans.join(" | ")}`)
 };
