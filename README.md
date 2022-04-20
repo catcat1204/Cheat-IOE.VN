@@ -4,10 +4,15 @@ Code heck ioe :'))
 
 **Bước 1:** Nhấn Ctrl+Shift+I trước khi làm bài
 
-**Bước 2:** Vào mục console rồi paste đoạn code đúng theo từng bài
+**Bước 2:** Nhấn vào làm bài thi
 
-**Bước 3:** Nhấn enter rồi đợi 1 lúc đáp án sẽ hiện ra 
+![image](https://user-images.githubusercontent.com/88836000/149661767-689d5a70-ab1d-4b51-9ab0-0c1e5613d374.png)
 
+**Bước 3:** Vào mục console rồi paste đoạn code đúng theo từng bài
+
+**Bước 4:** Nhấn enter rồi đợi 1 lúc đáp án sẽ hiện ra 
+
+**Bước 5:** Bấm nút bắt đầu làm bài
 ## 🌈 Các dạng bài 
 **Bài con chó (ghép hình)**
 ```js
