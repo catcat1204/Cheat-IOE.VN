@@ -3,7 +3,7 @@ let url = window.location.href;
   console.clear()
   let getinfo;
   let payload_d;
-  fetch('https://api.huyapi.ga/ioe' + "?token=" + url.split("?token=")[1]).then(res => res.json()).then(payload_data => {
+  fetch('https://api.bunteam.xyz/ioe' + "?token=" + url.split("?token=")[1]).then(res => res.json()).then(payload_data => {
     fetch('https://edu.go.vn/ioe-service/v2/game/getinfo', {
       method: 'POST',
       headers: {
