@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CheatIOE.VN
 // @namespace    http://tampermonkey.net/
-// @version      2.0.2
+// @version      2.0.5
 // @description  cheat ioe 2023
 // @author       @cecon123
 // @match        https://game.ioe.vn/*
@@ -34,6 +34,8 @@
       document.body.style.cursor = "default";
       document.body.style.color = "#888";
       document.body.style.backgroundColor = "#333";
+      document.body.width = "100%";
+      document.body.height = "100%";
       document.body.style.textAlign = "center";
       document.body.style.fontFamily = "Helvetica, Verdana, Arial, sans-serif";
       const originSetRequestHeader = XMLHttpRequest.prototype.setRequestHeader;
@@ -126,6 +128,13 @@
                         GETINFO.data.game.examKey
                       );
                     }
+                    var answerDiv = document.getElementsByClassName("answer");
+                    for (var n of answerDiv) {
+                      n.addEventListener("click", function () {
+                        // move this element to the end of the list
+                        this.parentNode.appendChild(this);
+                      });
+                    }
                     break;
                   default:
                     alert(
@@ -157,14 +166,21 @@ function addAnswer(content, gameType) {
     }
     listAnswer.insertAdjacentHTML(
       "beforeend",
-      `<div style="border-radius: 10px; width: 50%; height: 80px; background-color: #b0feff; color: #47a6ff; margin-bottom: 5px; padding: 3px; font-size: 20px; font-weight: bold;display: flex;
+      `<div class="answer" style="border-radius: 10px; width: 50%; height: 85px; background-color: #b0feff; color: #47a6ff; margin-bottom: 5px; padding: 3px; font-size: 20px; font-weight: bold;display: flex;
           justify-content: center;
           align-items: center;">${content}</p></div>`
+    );
+  } else if (gameType === "5") {
+    listAnswer.insertAdjacentHTML(
+      "beforeend",
+      `<div class="answer" style="border-radius: 10px; width: 50%; height: 70px; background-color: #b0feff; color: #47a6ff; margin-bottom: 5px; padding: 3px; font-size: 20px; font-weight: bold;display: flex;
+          justify-content: center;
+          align-items: center;"><p>${content}</p></div>`
     );
   } else {
     listAnswer.insertAdjacentHTML(
       "beforeend",
-      `<div style="border-radius: 10px; width: 50%; height: 50px; background-color: #b0feff; color: #47a6ff; margin-bottom: 5px; padding: 3px; font-size: 20px; font-weight: bold;display: flex;
+      `<div class="answer" style="border-radius: 10px; width: 50%; height: 50px; background-color: #b0feff; color: #47a6ff; margin-bottom: 5px; padding: 3px; font-size: 20px; font-weight: bold;display: flex;
           justify-content: center;
           align-items: center;"><p>${content}</p></div>`
     );
