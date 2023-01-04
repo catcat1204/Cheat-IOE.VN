@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CheatIOE.VN
 // @namespace    http://tampermonkey.net/
-// @version      2.0.5
+// @version      2.0.7
 // @description  cheat ioe 2023
 // @author       @cecon123
 // @match        https://game.ioe.vn/*
@@ -116,6 +116,12 @@
                         GETINFO.data.game.examKey
                       );
                     }
+                    var answerDiv = document.getElementsByClassName("answer");
+                    for (var n of answerDiv) {
+                      n.addEventListener("click", function () {
+                        this.parentNode.appendChild(this);
+                      });
+                    }
                     break;
                   case "5":
                     for (var m of GETINFO.data.game.question) {
@@ -131,7 +137,6 @@
                     var answerDiv = document.getElementsByClassName("answer");
                     for (var n of answerDiv) {
                       n.addEventListener("click", function () {
-                        // move this element to the end of the list
                         this.parentNode.appendChild(this);
                       });
                     }
