@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         CheatIOE.VN
 // @namespace    http://tampermonkey.net/
-// @version      2.0.1
+// @version      2.0.2
 // @description  cheat ioe 2023
 // @author       @cecon123
 // @match        https://game.ioe.vn/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=ioe.vn
-// @grant        none
 // @downloadURL  https://github.com/catcat1204/Cheat-IOE.VN/raw/master/cheatioe.user.js
 // @updateURL    https://github.com/catcat1204/Cheat-IOE.VN/raw/master/cheatioe.user.js
+// @grant        none
 // ==/UserScript==
 
 (function () {
@@ -31,6 +31,11 @@
         </div>
       `
       );
+      document.body.style.cursor = "default";
+      document.body.style.color = "#888";
+      document.body.style.backgroundColor = "#333";
+      document.body.style.textAlign = "center";
+      document.body.style.fontFamily = "Helvetica, Verdana, Arial, sans-serif";
       const originSetRequestHeader = XMLHttpRequest.prototype.setRequestHeader;
       let GETINFO;
       let isStart = false;
