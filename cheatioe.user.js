@@ -7,8 +7,8 @@
 // @match        https://game.ioe.vn/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=ioe.vn
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/catcat1204/Cheat-IOE.VN/master/cheatioe.js
-// @updateURL    https://raw.githubusercontent.com/catcat1204/Cheat-IOE.VN/master/cheatioe.js
+// @downloadURL  https://github.com/catcat1204/Cheat-IOE.VN/raw/master/cheatioe.user.js
+// @updateURL    https://github.com/catcat1204/Cheat-IOE.VN/raw/master/cheatioe.user.js
 // ==/UserScript==
 
 (function () {
